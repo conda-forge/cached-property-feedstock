@@ -30,7 +30,14 @@ about:
   home: https://github.com/pydanny/cached-property
   license: BSD-3-Clause
   license_family: BSD
+  license_file: LICENSE
   summary: 'A decorator for caching properties in classes.'
+  description: |
+    Cached-property is a decorator for caching properties in classes. It
+    makes caching of time or computational expensive properties quick and easy.
+  doc_url: https://pypi.python.org/pypi/cached-property
+  dev_url: https://github.com/pydanny/cached-property
+  doc_source_url: https://github.com/pydanny/cached-property/blob/master/README.rst
 
 extra:
   recipe-maintainers:
