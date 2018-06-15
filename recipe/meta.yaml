@@ -1,6 +1,6 @@
 {% set name = "cached-property" %}
-{% set version = "1.4.0" %}
-{% set sha256 = "a2fa0f89dd422f7e5dd992a4a3e0ce209d5d1e47a4db28fd0a7b5273ec8da3f0" %}
+{% set version = "1.4.3" %}
+{% set sha256 = "f1f9028757dc40b4cb0fd2234bd7b61a302d7b84c683cb8c2c529238a24b8938" %}
 
 package:
   name: {{ name|lower }}
