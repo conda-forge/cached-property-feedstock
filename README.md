@@ -14,14 +14,16 @@ Summary: A decorator for caching properties in classes.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/cached-property-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/cached-property-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/cached-property-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/cached-property-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/cached-property-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/cached-property-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/cached-property-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/cached-property-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/cached-property-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/cached-property-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/cached-property-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/cached-property-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/cached-property/badges/version.svg)](https://anaconda.org/conda-forge/cached-property)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/cached-property/badges/downloads.svg)](https://anaconda.org/conda-forge/cached-property)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-cached--property-green.svg)](https://anaconda.org/conda-forge/cached-property) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cached-property.svg)](https://anaconda.org/conda-forge/cached-property) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cached-property.svg)](https://anaconda.org/conda-forge/cached-property) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cached-property.svg)](https://anaconda.org/conda-forge/cached-property) |
 
 Installing cached-property
 ==========================
