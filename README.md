@@ -14,9 +14,8 @@ Summary: A decorator for caching properties in classes.
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/cached-property-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/cached-property-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/cached-property-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/cached-property-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/cached-property-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/cached-property-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/cached-property-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/cached-property-feedstock)
 
 Current release info
 ====================
