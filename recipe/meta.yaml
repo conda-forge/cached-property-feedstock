@@ -1,37 +1,40 @@
-{% set name = "cached-property" %}
-{% set version = "1.5.1" %}
-{% set sha256 = "9217a59f14a5682da7c4b8829deadbfc194ac22e9908ccf7c8820234e80a1504" %}
+{% set name = "cached_property" %}
+{% set version = "1.5.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cached-property-{{ version }}.tar.gz
+  sha256: 9fa5755838eecbb2d234c3aa390bd80fbd3ac6b6869109bfc1b499f7bd89a130
 
 build:
-  noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
     - pip
+    - python >=3.6
   run:
-    - python
+    - python >=3.6
 
 test:
   imports:
     - cached_property
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/pydanny/cached-property
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'A decorator for caching properties in classes.'
+  summary: A decorator for caching properties in classes.
   description: |
     Cached-property is a decorator for caching properties in classes. It
     makes caching of time or computational expensive properties quick and easy.
@@ -41,4 +44,5 @@ about:
 
 extra:
   recipe-maintainers:
+    - anthchirp
     - mvdbeek
