@@ -10,16 +10,7 @@ source:
   sha256: 9fa5755838eecbb2d234c3aa390bd80fbd3ac6b6869109bfc1b499f7bd89a130
 
 build:
-  number: 0
-  noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
-
-requirements:
-  host:
-    - pip
-    - python >=3.6
-  run:
-    - python >=3.6
+  number: 1
 
 test:
   imports:
@@ -28,6 +19,25 @@ test:
     - pip check
   requires:
     - pip
+
+outputs:
+  - name: {{ name }}
+    script: build_base.sh
+    build:
+      noarch: python
+    requirements:
+      host:
+        - pip
+        - python >=3.6
+      run:
+        - python >=3.6
+
+  - name: cached-property
+    build:
+      noarch: python
+    requirements:
+      run:
+        - {{ pin_subpackage('cached_property', max_pin="x.x.x") }}
 
 about:
   home: https://github.com/pydanny/cached-property

@@ -35,6 +35,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-cached--property-green.svg)](https://anaconda.org/conda-forge/cached-property) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cached-property.svg)](https://anaconda.org/conda-forge/cached-property) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cached-property.svg)](https://anaconda.org/conda-forge/cached-property) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cached-property.svg)](https://anaconda.org/conda-forge/cached-property) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-cached_property-green.svg)](https://anaconda.org/conda-forge/cached_property) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cached_property.svg)](https://anaconda.org/conda-forge/cached_property) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cached_property.svg)](https://anaconda.org/conda-forge/cached_property) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cached_property.svg)](https://anaconda.org/conda-forge/cached_property) |
 
 Installing cached_property
@@ -46,16 +47,16 @@ Installing `cached_property` from the `conda-forge` channel can be achieved by a
 conda config --add channels conda-forge
 ```
 
-Once the `conda-forge` channel has been enabled, `cached_property` can be installed with:
+Once the `conda-forge` channel has been enabled, `cached-property, cached_property` can be installed with:
 
 ```
-conda install cached_property
+conda install cached-property cached_property
 ```
 
-It is possible to list all of the versions of `cached_property` available on your platform with:
+It is possible to list all of the versions of `cached-property` available on your platform with:
 
 ```
-conda search cached_property --channel conda-forge
+conda search cached-property --channel conda-forge
 ```
 
 
@@ -114,9 +115,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
