@@ -1,16 +1,16 @@
 {% set name = "cached_property" %}
-{% set version = "1.5.2" %}
+{% set version = "2.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cached-property-{{ version }}.tar.gz
-  sha256: 9fa5755838eecbb2d234c3aa390bd80fbd3ac6b6869109bfc1b499f7bd89a130
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: fd4a5530c01c2fa42fa89f423caf2f54c7edd5cd1da38507d06d4067af414763
 
 build:
-  number: 1
+  number: 0
 
 test:
   imports:
