@@ -1,11 +1,11 @@
-About cached_property
-=====================
+About cached_property-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cached-property-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/pydanny/cached-property
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cached-property-feedstock/blob/master/LICENSE.txt)
 
 Summary: A decorator for caching properties in classes.
 
@@ -23,8 +23,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3774&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/cached-property-feedstock?branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3774&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/cached-property-feedstock?branchName=main">
       </a>
     </td>
   </tr>
@@ -45,25 +45,52 @@ Installing `cached_property` from the `conda-forge` channel can be achieved by a
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `cached-property, cached_property` can be installed with:
+Once the `conda-forge` channel has been enabled, `cached-property, cached_property` can be installed with `conda`:
 
 ```
 conda install cached-property cached_property
 ```
 
-It is possible to list all of the versions of `cached-property` available on your platform with:
+or with `mamba`:
+
+```
+mamba install cached-property cached_property
+```
+
+It is possible to list all of the versions of `cached-property` available on your platform with `conda`:
 
 ```
 conda search cached-property --channel conda-forge
+```
+
+or with `mamba`:
+
+```
+mamba search cached-property --channel conda-forge
+```
+
+Alternatively, `mamba repoquery` may provide more information:
+
+```
+# Search all versions available on your platform:
+mamba repoquery search cached-property --channel conda-forge
+
+# List packages depending on `cached-property`:
+mamba repoquery whoneeds cached-property --channel conda-forge
+
+# List dependencies of `cached-property`:
+mamba repoquery depends cached-property --channel conda-forge
 ```
 
 
 About conda-forge
 =================
 
-[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
+[![Powered by
+NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](https://numfocus.org)
 
 conda-forge is a community-led conda channel of installable packages.
 In order to provide high-quality builds, the process has been automated into the
@@ -73,10 +100,12 @@ for each of the installable packages. Such a repository is known as a *feedstock
 A feedstock is made up of a conda recipe (the instructions on what and how to build
 the package) and the necessary configurations for automatic building using freely
 available continuous integration services. Thanks to the awesome service provided by
-[CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/)
-and [TravisCI](https://travis-ci.com/) it is possible to build and upload installable
-packages to the [conda-forge](https://anaconda.org/conda-forge)
-[Anaconda-Cloud](https://anaconda.org/) channel for Linux, Windows and OSX respectively.
+[Azure](https://azure.microsoft.com/en-us/services/devops/), [GitHub](https://github.com/),
+[CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
+[Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
+it is possible to build and upload installable packages to the
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
+channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
 [conda-smithy](https://github.com/conda-forge/conda-smithy) has been developed.
