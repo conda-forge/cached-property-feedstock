@@ -1,24 +1,23 @@
 schema_version: 1
 
 context:
-  name: cached_property
-  version: "1.5.2"
+  version: "2.0.1"
 
 recipe:
-  name: ${{ name|lower }}
+  name: cached_property
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/cached-property-${{ version }}.tar.gz
-  sha256: 9fa5755838eecbb2d234c3aa390bd80fbd3ac6b6869109bfc1b499f7bd89a130
+  url: https://pypi.org/packages/source/c/cached-property/cached_property-${{ version }}.tar.gz
+  sha256: 484d617105e3ee0e4f1f58725e72a8ef9e93deee462222dbd51cd91230897641
 
 build:
   noarch: python
-  number: 2
+  number: 0
 
 outputs:
   - package:
-      name: ${{ name }}
+      name: cached_property
     build:
       script:
         file: build_base.sh
