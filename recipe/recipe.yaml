@@ -27,6 +27,16 @@ outputs:
         - setuptools
       run:
         - python >=${{ python_min }}
+    tests:
+      - script:
+          - pytest
+        requirements:
+          run:
+            - pytest
+            - freezegun
+        files:
+          source:
+            - tests/
   - package:
       name: cached-property
     requirements:
