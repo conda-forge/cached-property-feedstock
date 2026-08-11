@@ -15,6 +15,15 @@ build:
   noarch: python
   number: 0
 
+tests:
+  - python:
+      imports:
+        - cached_property
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
+
 outputs:
   - package:
       name: cached_property
@@ -42,15 +51,6 @@ outputs:
     requirements:
       run:
         - ${{ pin_subpackage('cached_property', upper_bound="x.x.x") }}
-
-tests:
-  - python:
-      imports:
-        - cached_property
-      pip_check: true
-      python_version:
-        - ${{ python_min }}.*
-        - "*"
 
 about:
   license: BSD-3-Clause
