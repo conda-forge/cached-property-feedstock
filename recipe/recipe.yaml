@@ -64,6 +64,7 @@ about:
   documentation: https://pypi.python.org/pypi/cached-property
 
 extra:
+  feedstock-name: cached-property
   recipe-maintainers:
     - anthchirp
     - mvdbeek
